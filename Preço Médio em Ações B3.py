@@ -16,9 +16,9 @@ quant3 = int(input('Digite a Quantidade da 3ª compra: '))
 
 Ativo = n1
 
-Preço_Médio = (compra + segunda_compra + terceira_compra)/(quant1 + quant2 + quant3)
+Preco_Médio = (compra + segunda_compra + terceira_compra)/(quant1 + quant2 + quant3)
 
-print('Seu preço médio em "{}" é de R$ {:.2f}'.format(n1, Preço_Médio),'por Ativo.')
+print('Seu preço médio em "{}" é de R$ {:.2f}'.format(n1, Preco_Médio),'por Ativo.')
 
 
 
