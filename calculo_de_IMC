@@ -1,0 +1,30 @@
+#Como calcular seu IMC de uma forma simples e com código fácil de aplicar:
+
+
+# informações de Uso abaixo:
+
+# IMC => PESO / (altura * altura)
+# 'Magreza, quando o resultado é menor que 18,5kg/m2';
+# 'Normal, quando o resultado está entre 18,5kg 2 24,9kg/m2';
+# 'Sobrepeso, quando o resultado está entre 24,9 e 30kg/m2';
+# 'Obesidade, quando o resultado é maior que 30kg/m2'.
+
+print('\n')
+print('Calcule seu IMC preenchendo as informações abaixo:\n')
+peso = float(input('Seu peso: '))
+altura = float(input('Sua altura: '))
+imc = peso / (altura*altura)
+print('\n***RESULTADO FINAL***')
+print('\nSeu IMC de gordura atual é de: {:.2f}' .format(imc))
+
+if imc < 18.5:
+    print('\nMAGREZA, quando o resultado é menor que 18,5kg/m2')
+elif 25 > imc >= 18.5:
+    print('\nNORMAL, quando o resultado está entre 18,5kg e 24,9kg/m2')
+elif 30 > imc >= 24.9:
+    print('\nSOBREPESO, quando o resultado está entre 24,9 e 30kg/m2')
+elif 40 > imc >= 30.0:
+    print('\nOBESIDADE, quando o resultado é maior que 30kg/m2')
+else:
+    print('\nOBESIDADE MÓRBIDA, quando o resultado é maior que 40kg/m2')
+print('\n')
